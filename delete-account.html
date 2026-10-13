@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Delete your account | Kilimo</title>
+<meta name="description" content="How to request deletion of your Kilimo account and personal data, what we delete and what we must keep.">
+<meta name="theme-color" content="#2F6B3C">
+<link rel="canonical" href="https://REPLACE_WITH_YOUR_DOMAIN/delete-account.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Delete your account | Kilimo">
+<meta property="og:description" content="How to request deletion of your Kilimo account and personal data, what we delete and what we must keep.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="k-head"><div class="k-wrap">
+<a class="k-logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#2F6B3C"/><path d="M8 24c9 0 16-6 17-16-10 1-17 7-17 16Z" fill="#fff"/><path d="M8 24c4-6 8-9 13-12" stroke="#2F6B3C" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>Kilimo</a>
+<nav class="k-nav" aria-label="Main">
+<a href="index.html#roles">Who it's for</a><a href="index.html#how">How it works</a><a href="index.html#screens">Screens</a><a href="index.html#safety">Safety</a><a href="index.html#faq">FAQ</a><a href="support.html">Support</a>
+</nav>
+<a class="k-btn k-btn--green k-btn--sm" href="https://play.google.com/store/apps/details?id=REPLACE_WITH_PACKAGE_ID">Get the app</a>
+</div></header>
+<main class="k-wrap k-narrow k-doc">
+<h1>Delete your Kilimo account</h1>
+<p class="k-updated">App: Kilimo &middot; Last updated: 8 October 2026</p>
+<p>You can ask us to delete your account and personal data at any time. This page explains how, what we remove, and what we are required to keep.</p>
+
+<h2>How to request deletion</h2>
+<ol style="padding-left:22px">
+<li style="margin-bottom:10px"><b>Before you start:</b> finish or cancel any open orders, deliveries, consultations or disputes, and withdraw any money left in your wallet.</li>
+<li style="margin-bottom:10px"><b>Send the request</b> using the form below, or email <a href="mailto:support@inuafund.co.ke">support@inuafund.co.ke</a> from the email on your account, or use <b>Profile &rarr; Help &amp; support &rarr; Email</b> inside the app.</li>
+<li style="margin-bottom:10px"><b>We verify it is you</b> (for example with a one-time code sent to the phone number on the account).</li>
+<li style="margin-bottom:10px"><b>We delete your data</b> and confirm by email or SMS, within <span class="k-todo">[30 days]</span>.</li>
+</ol>
+
+<form class="k-form" id="del" data-to="support@inuafund.co.ke">
+<label>Full name<input name="name" required autocomplete="name"></label>
+<label>Phone number on the account<input name="phone" required inputmode="tel" placeholder="07XX XXX XXX" autocomplete="tel"></label>
+<label>Your role<select name="role"><option>Farmer</option><option>Agrovet</option><option>Rider</option><option>Professional</option><option>More than one</option></select></label>
+<label>What would you like deleted?<select name="scope"><option>My whole account and personal data</option><option>Only some data (explain below)</option></select></label>
+<label>Reason (optional)<textarea name="reason" rows="3"></textarea></label>
+<button class="k-btn k-btn--green" type="submit">Prepare deletion email</button>
+<p class="k-note">This opens your email app with the request filled in. Nothing is sent until you press send.</p>
+</form>
+
+<h2>What gets deleted</h2>
+<ul><li>Your profile: name, photo, phone number, email, county</li>
+<li>Saved farm, shop and other locations, and location history</li>
+<li>Verification documents (ID, licences, logbook, passport photo)</li>
+<li>Chat messages, produce listings, product listings, articles and photos you uploaded</li>
+<li>Push-notification tokens and device data</li></ul>
+
+<h2>What we keep, and for how long</h2>
+<p>The law and our need to prevent fraud mean we must keep some records. These are kept securely, restricted, and not used for anything else:</p>
+<ul><li>Transaction, payment and payout records: <span class="k-todo">[7 years]</span> (tax and financial regulations)</li>
+<li>Dispute and complaint records linked to a transaction: <span class="k-todo">[7 years]</span></li>
+<li>Information needed to block fraud or banned accounts: <span class="k-todo">[as long as needed]</span></li>
+<li>Ratings you gave others may stay in anonymised form so the other person's score stays accurate</li></ul>
+
+<h2>Just want less data used?</h2>
+<p>You can also withdraw location and marketing consent in your phone settings or in the app, without deleting your account. See our <a href="privacy.html#rights">Privacy Policy</a> for all your rights.</p>
+</main>
+<script>
+document.getElementById('del').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target, v=function(n){return (f.elements[n].value||'').trim()};
+  var body='Account deletion request%0D%0A%0D%0AFull name: '+encodeURIComponent(v('name'))+
+   '%0D%0APhone number on the account: '+encodeURIComponent(v('phone'))+
+   '%0D%0ARole: '+encodeURIComponent(v('role'))+
+   '%0D%0AWhat to delete: '+encodeURIComponent(v('scope'))+
+   '%0D%0AReason (optional): '+encodeURIComponent(v('reason'))+
+   '%0D%0A%0D%0AI confirm I am the owner of this account.';
+  window.location.href='mailto:'+f.dataset.to+'?subject='+encodeURIComponent('Delete my Kilimo account')+'&body='+body;
+});
+</script><footer class="k-foot"><div class="k-wrap">
+<div><a class="k-logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#2F6B3C"/><path d="M8 24c9 0 16-6 17-16-10 1-17 7-17 16Z" fill="#fff"/><path d="M8 24c4-6 8-9 13-12" stroke="#2F6B3C" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>Kilimo</a><small>Growing jobs. Connecting farms.<br>&copy; 2026 <span class="k-todo">[Company legal name]</span>. All rights reserved.</small></div>
+<nav aria-label="Footer"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="delete-account.html">Delete your account</a><a href="support.html">Support</a><a href="mailto:support@inuafund.co.ke">support@inuafund.co.ke</a></nav>
+</div></footer>
+</body></html>
