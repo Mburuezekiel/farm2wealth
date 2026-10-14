@@ -36,7 +36,7 @@ Then delete the yellow highlight by removing `class="k-todo"` (or leave it until
 Have a lawyer review the Privacy Policy and Terms before launch. They are written as a sound starting
 point under the Kenya Data Protection Act, 2019, not as legal advice.
 
-Support email used everywhere: `support@inuafund.co.ke` (taken from the app). Change it if needed.
+Support email used everywhere: `njuguna.ezekiel.mburu@gmail.com` (taken from the app). Change it if needed.
 
 ## 2. Deploy (pick one)
 
@@ -51,7 +51,7 @@ Use HTTPS. Make sure `https://your-domain/privacy.html` opens without login.
 | Play Console field | Value |
 | --- | --- |
 | Store listing > Website | `https://your-domain/` |
-| Store listing > Email | `support@inuafund.co.ke` |
+| Store listing > Email | `njuguna.ezekiel.mburu@gmail.com` |
 | App content > Privacy policy | `https://your-domain/privacy.html` |
 | App content > Data safety > Delete account URL | `https://your-domain/delete-account.html` |
 | Data deletion: "also delete data without deleting account" | not offered yet (say No, or add later) |
