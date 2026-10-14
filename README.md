@@ -1,4 +1,4 @@
-# Kilimo website
+# Farm2Wealth website
 
 Plain static site: HTML + 2 CSS files. No build step, no JavaScript framework, no cookies.
 Total size is about 150 KB. Host it anywhere that serves static files.
@@ -30,7 +30,7 @@ Search-and-replace these strings in every file:
 | Find | Replace with |
 | --- | --- |
 | `REPLACE_WITH_PACKAGE_ID` | your Android package name (the `id=` in your Play Store URL) |
-| `REPLACE_WITH_YOUR_DOMAIN` | your domain, e.g. `kilimo.example.co.ke` |
+| `REPLACE_WITH_YOUR_DOMAIN` | your domain, e.g. `Farm2Wealth.example.co.ke` |
 
 Then delete the yellow highlight by removing `class="k-todo"` (or leave it until each value is confirmed).
 Have a lawyer review the Privacy Policy and Terms before launch. They are written as a sound starting
@@ -85,14 +85,14 @@ data is **not sold**.
 
 ## 4. Store listing text (ready to paste)
 
-**App name:** Kilimo
+**App name:** Farm2Wealth
 
 **Short description (80 chars max):**
 `Buy farm inputs, get delivery, ask experts and sell produce.` (60)
 
 **Full description:**
 ```
-Kilimo connects farmers, agrovets, agricultural professionals and bike riders in one app.
+Farm2Wealth connects farmers, agrovets, agricultural professionals and bike riders in one app.
 
 FARMERS
 - Find verified agrovets near you and buy seeds, fertilizer and tools
@@ -123,7 +123,7 @@ Growing jobs. Connecting farms.
 ## 5. Notes
 - The app screens on the home page are reused from your mock-up file (pure HTML/CSS, no images).
   Re-run the same approach to refresh them when the UI changes.
-- The home page names the app **Kilimo**, following the scope document. The in-app Terms text still says
+- The home page names the app **Farm2Wealth**, following the scope document. The in-app Terms text still says
   "Farm2Wealth"; align the two before release so the store listing, website and app agree.
 - The delete-account page uses an email-based request (works with no backend). If you later add
   in-app deletion, update the steps on that page, which Google checks.
